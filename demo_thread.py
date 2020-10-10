@@ -29,4 +29,3 @@ if __name__ == "__main__":
             model = models.vgg19(pretrained=False)
             hook_list = register_hook(model) 
             server.update_model(model, hook_list, "./data/Cat", [200,200])
-    
